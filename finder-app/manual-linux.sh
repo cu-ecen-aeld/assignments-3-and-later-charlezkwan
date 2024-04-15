@@ -92,12 +92,12 @@ ${CROSS_COMPILE}readelf -a bin/busybox | grep "Shared library"
 
 # TODO: Add library dependencies to rootfs
 
-GCCLIBs=/home/charlez/Downloads/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc
-echo "Copying necessary library dependences in the ${OUTDIR}/rootfs FOLDER from ${GCCLIBs}"
-cp "${GCCLIBs}/lib64/libm.so.6" "${OUTDIR}/rootfs/lib64/libm.so.6"
-cp "${GCCLIBs}/lib64/libresolv.so.2" "${OUTDIR}/rootfs/lib64/libresolv.so.2"
-cp "${GCCLIBs}/lib64/libc.so.6" "${OUTDIR}/rootfs/lib64/libc.so.6"
-cp "${GCCLIBs}/lib/ld-linux-aarch64.so.1" "${OUTDIR}/rootfs/lib/ld-linux-aarch64.so.1"
+SYSROOT=$(${CROSS_COMPILE}gcc -print-sysroot)
+echo "Copying necessary library dependences in the ${OUTDIR}/rootfs FOLDER from ${SYSROOT}"
+cp "${SYSROOT}/lib64/libm.so.6" "${OUTDIR}/rootfs/lib64/libm.so.6"
+cp "${SYSROOT}/lib64/libresolv.so.2" "${OUTDIR}/rootfs/lib64/libresolv.so.2"
+cp "${SYSROOT}/lib64/libc.so.6" "${OUTDIR}/rootfs/lib64/libc.so.6"
+cp "${SYSROOT}/lib/ld-linux-aarch64.so.1" "${OUTDIR}/rootfs/lib/ld-linux-aarch64.so.1"
 # TODO: Make device nodes
 sudo mknod -m 666 dev/null c 1 3
 sudo mknod -m 666 dev/console c 5 1

@@ -15,4 +15,4 @@ $(TARGET).o:$(TARGET).c
 all: $(TARGET)
 
 clean:	
-	rm *.o	
+	rm -f *.o	

@@ -5,7 +5,8 @@
 set -e
 set -u
 
-exec > >(tee -i /tmp/assignment4-result.txt)
+OUTPUTFILE=/tmp/assignment4-result.txt
+exec > >(tee -i ${OUTPUTFILE})
 exec 2>&1
 
 NUMFILES=10

@@ -5,6 +5,7 @@
 set -e
 set -u
 
+cd "dirname $0"
 OUTPUTFILE=/tmp/assignment4-result.txt
 exec > >(tee -i ${OUTPUTFILE})
 exec 2>&1

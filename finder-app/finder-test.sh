@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 # Tester script for assignment 1 and assignment 2
 # Author: Siddhant Jajoo
 
 set -e
 set -u
+
+exec > >(tee -i /tmp/assignment4-result.txt)
+exec 2>&1
 
 NUMFILES=10
 WRITESTR=AELD_IS_FUN

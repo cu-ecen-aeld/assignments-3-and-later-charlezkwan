@@ -280,7 +280,11 @@ void* log_time(void *arg) {
 
         strftime(buffer, sizeof(buffer), "timestamp:%Y-%m-%d %H:%M:%S", time_info);
 
-        pthread_mutex_lock(&lock);
+        int rc = pthread_mutex_lock(&lock);
+        if(rc != 0){
+            perror("muxtex lock");
+            // return (void*)-1;
+         }
         fp = fopen(SOCKETDATAFILE, "a");
         if (fp != NULL) {
             fprintf(fp, "%s\n", buffer);
@@ -288,7 +292,11 @@ void* log_time(void *arg) {
         } else {
             perror("Failed to open the log file");
         }
-        pthread_mutex_unlock(&lock);
+        rc = pthread_mutex_unlock(&lock);
+        if(rc != 0){
+            perror("muxtex lock");
+            // return (void*)-1;
+         }
 
         sleep(10);  // Sleep for 10 seconds
     }

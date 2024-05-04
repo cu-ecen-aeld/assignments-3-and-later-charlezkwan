@@ -1,0 +1,32 @@
+559dc8c36000-559dc8c37000 r--p 00000000 08:05 12202338                   /home/charlez/Desktop/assignments-3-and-later-charlezkwan/server/aesdsocket
+559dc8c37000-559dc8c38000 r-xp 00001000 08:05 12202338                   /home/charlez/Desktop/assignments-3-and-later-charlezkwan/server/aesdsocket
+559dc8c38000-559dc8c39000 r--p 00002000 08:05 12202338                   /home/charlez/Desktop/assignments-3-and-later-charlezkwan/server/aesdsocket
+559dc8c39000-559dc8c3a000 r--p 00002000 08:05 12202338                   /home/charlez/Desktop/assignments-3-and-later-charlezkwan/server/aesdsocket
+559dc8c3a000-559dc8c3b000 rw-p 00003000 08:05 12202338                   /home/charlez/Desktop/assignments-3-and-later-charlezkwan/server/aesdsocket
+559dc8f07000-559dc8f28000 rw-p 00000000 00:00 0                          [heap]
+7feb78000000-7feb78021000 rw-p 00000000 00:00 0 
+7feb78021000-7feb7c000000 ---p 00000000 00:00 0 
+7feb7e835000-7feb7e836000 ---p 00000000 00:00 0 
+7feb7e836000-7feb7f039000 rw-p 00000000 00:00 0 
+7feb7f039000-7feb7f05b000 r--p 00000000 08:05 526494                     /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7feb7f05b000-7feb7f1d3000 r-xp 00022000 08:05 526494                     /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7feb7f1d3000-7feb7f221000 r--p 0019a000 08:05 526494                     /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7feb7f221000-7feb7f225000 r--p 001e7000 08:05 526494                     /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7feb7f225000-7feb7f227000 rw-p 001eb000 08:05 526494                     /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7feb7f227000-7feb7f22b000 rw-p 00000000 00:00 0 
+7feb7f22b000-7feb7f231000 r--p 00000000 08:05 526548                     /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7feb7f231000-7feb7f242000 r-xp 00006000 08:05 526548                     /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7feb7f242000-7feb7f248000 r--p 00017000 08:05 526548                     /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7feb7f248000-7feb7f249000 r--p 0001c000 08:05 526548                     /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7feb7f249000-7feb7f24a000 rw-p 0001d000 08:05 526548                     /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7feb7f24a000-7feb7f250000 rw-p 00000000 00:00 0 
+7feb7f262000-7feb7f263000 r--p 00000000 08:05 526474                     /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7feb7f263000-7feb7f286000 r-xp 00001000 08:05 526474                     /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7feb7f286000-7feb7f28e000 r--p 00024000 08:05 526474                     /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7feb7f28f000-7feb7f290000 r--p 0002c000 08:05 526474                     /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7feb7f290000-7feb7f291000 rw-p 0002d000 08:05 526474                     /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7feb7f291000-7feb7f292000 rw-p 00000000 00:00 0 
+7ffe09ef7000-7ffe09f18000 rw-p 00000000 00:00 0                          [stack]
+7ffe09fe7000-7ffe09feb000 r--p 00000000 00:00 0                          [vvar]
+7ffe09feb000-7ffe09fed000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

@@ -66,8 +66,8 @@ static void cleanups(){
       perror("socketfd shutdown");
    if (close(socketfd) == -1)
       perror("socketfd close");
-   if(shutdown(acceptedfd,SHUT_RDWR)==-1)
-      perror("acceptfd shutdown");
+   // if(shutdown(acceptedfd,SHUT_RDWR)==-1)
+   //    perror("acceptfd shutdown");
    if (close(acceptedfd) == -1)
       perror("acceptfd close");
    // if (fclose(socketdatafile) == -1)

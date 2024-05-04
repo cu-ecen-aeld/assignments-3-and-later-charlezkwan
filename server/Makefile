@@ -2,7 +2,7 @@
 CC = gcc	
 CROSS_COMPILE?=	
 
-CFLAGS = -g -Wall -Werror
+CFLAGS = -g -Wall -Werror -pthread
 SRCS = aesdsocket.c
 TARGET = aesdsocket
 
